@@ -60,7 +60,7 @@ Exported weights: [`artifacts/`](artifacts/) — `mobilefacenet_fp32.pt`, `*_fp3
 
 ---
 
-## ✨ Features
+## Features
 
 | | |
 |---|---|
@@ -79,7 +79,7 @@ Exported weights: [`artifacts/`](artifacts/) — `mobilefacenet_fp32.pt`, `*_fp3
 
 ---
 
-## 📱 Screens
+## Screens
 
 <div align="center">
 
