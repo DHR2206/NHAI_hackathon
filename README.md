@@ -85,10 +85,10 @@ Face detected → 3 liveness challenges → anti-spoof check → CNN match (99.2
 
 | Metric | Our Result | Hackathon Constraint | Verdict |
 |:---:|:---:|:---:|:---:|
-| **LFW 10-fold Accuracy** | **99.28%** | > 95% | ✅ **+4.28% above requirement** |
-| **Model Size (INT8)** | **1.15 MB** | < 20 MB | ✅ **17× smaller than limit** |
-| **CPU Latency/Face** | **63 ms** | < 1000 ms | ✅ **16× faster than limit** |
-| **Self-trained** | MobileFaceNet + ArcFace | Required | ✅ **100% custom** |
+| **LFW 10-fold Accuracy** | **99.28%** | > 95% |  **+4.28% above requirement** |
+| **Model Size (INT8)** | **1.15 MB** | < 20 MB | **17× smaller than limit** |
+| **CPU Latency/Face** | **63 ms** | < 1000 ms | **16× faster than limit** |
+| **Self-trained** | MobileFaceNet + ArcFace | Required | **100% custom** |
 
 </div>
 
