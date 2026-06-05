@@ -16,11 +16,11 @@
 
 ---
 
-## 🛣️ The Problem
+## The Problem
 
 NHAI manages 50,000+ highway construction workers across remote stretches with **little or no connectivity**. Marking attendance reliably — and proving *who* was actually on-site — is hard. Paper registers and proxy punching are rampant, and cloud face-recognition APIs are useless without a signal.
 
-## 💡 Our Solution
+## Our Solution
 
 A **fully offline** Android app that authenticates workers by face, in seconds, on a regular phone:
 
@@ -34,7 +34,7 @@ A **fully offline** Android app that authenticates workers by face, in seconds, 
 
 ---
 
-## 🧠 The Custom Model
+## The Custom Model
 
 We did **not** use an off-the-shelf API. We trained **MobileFaceNet with an ArcFace margin head** from scratch on **CASIA-WebFace**, and verified it on the standard **LFW 10-fold** protocol.
 
@@ -53,8 +53,8 @@ We did **not** use an off-the-shelf API. We trained **MobileFaceNet with an ArcF
 - **Hardware:** Kaggle Tesla T4, AMP mixed precision, ~6.6 h for best checkpoint
 - **Export:** PyTorch → ONNX (FP32) → dynamic INT8 quantization, parity-checked
 
-📓 Full reproducible notebook: [`notebook/mobilefacenet_training.ipynb`](notebook/mobilefacenet_training.ipynb)
-📦 Exported weights: [`artifacts/`](artifacts/) — `mobilefacenet_fp32.pt`, `*_fp32.onnx`, `*_int8.onnx`
+Full reproducible notebook: [`notebook/mobilefacenet_training.ipynb`](notebook/mobilefacenet_training.ipynb)
+Exported weights: [`artifacts/`](artifacts/) — `mobilefacenet_fp32.pt`, `*_fp32.onnx`, `*_int8.onnx`
 
 > **On-device resilience:** the app runs the ONNX embedding pipeline with an **eye-aligned geometric landmark fallback**, so recognition works on *every* phone — even those whose runtime lacks the quantized operator set. Robustness by design.
 
@@ -64,18 +64,18 @@ We did **not** use an off-the-shelf API. We trained **MobileFaceNet with an ArcF
 
 | | |
 |---|---|
-| 🧠 **Custom face recognition** | Self-trained MobileFaceNet, 128-D embeddings, 99.28% LFW |
-| 👁️ **Active liveness** | 3 randomized challenges (blink / smile / head-turn) with live progress |
-| 🛡️ **Anti-spoofing** | Laplacian-variance texture analysis blocks print & screen replays |
-| 🔐 **BioHash privacy** | ISO/IEC 24745 cancellable templates — raw vector never stored |
-| 📍 **GPS geofencing** | Check-in / out validated against site boundaries |
-| 🦺 **PPE compliance** | Helmet & hi-vis vest detection gates site entry |
-| 📡 **Offline-first sync** | Works with zero signal; syncs to Datalake 3.0 with retry/backoff |
-| 🆔 **Aadhaar linkage** | Optional capture with Verhoeff checksum + masked display |
-| 📊 **Live analytics** | On-device dashboard: pass rate, confidence, spoof blocks, 7-day trend |
-| 🔒 **Encryption at rest** | AES-256-GCM, 3-attempt lockout, GDPR-style retention |
-| 🗣️ **Localized** | Hindi / English voice prompts, high-contrast outdoor UI |
-| 🛠️ **Admin console** | 2FA admin access, system health, configuration |
+| **Custom face recognition** | Self-trained MobileFaceNet, 128-D embeddings, 99.28% LFW |
+|  **Active liveness** | 3 randomized challenges (blink / smile / head-turn) with live progress |
+|  **Anti-spoofing** | Laplacian-variance texture analysis blocks print & screen replays |
+|  **BioHash privacy** | ISO/IEC 24745 cancellable templates — raw vector never stored |
+|  **GPS geofencing** | Check-in / out validated against site boundaries |
+|  **PPE compliance** | Helmet & hi-vis vest detection gates site entry |
+|  **Offline-first sync** | Works with zero signal; syncs to Datalake 3.0 with retry/backoff |
+|  **Aadhaar linkage** | Optional capture with Verhoeff checksum + masked display |
+|  **Live analytics** | On-device dashboard: pass rate, confidence, spoof blocks, 7-day trend |
+|  **Encryption at rest** | AES-256-GCM, 3-attempt lockout, GDPR-style retention |
+|  **Localized** | Hindi / English voice prompts, high-contrast outdoor UI |
+|  **Admin console** | 2FA admin access, system health, configuration |
 
 ---
 
@@ -99,7 +99,7 @@ We did **not** use an off-the-shelf API. We trained **MobileFaceNet with an ArcF
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -126,7 +126,7 @@ We did **not** use an off-the-shelf API. We trained **MobileFaceNet with an ArcF
 
 ---
 
-## 🔌 Datalake 3.0 Integration
+## Datalake 3.0 Integration
 
 ```typescript
 import { FaceAuthModule } from './services/datalakeIntegration';
@@ -141,7 +141,7 @@ await FaceAuthModule.syncToServer();
 
 ---
 
-## 🚀 Run It
+## Run It
 
 ### Install the APK
 1. Download the latest APK from the [**Releases**](../../releases/latest) page.
@@ -170,7 +170,7 @@ npx tsc --noEmit  # type-check
 
 ---
 
-## 📂 Repository Layout
+## Repository Layout
 
 ```
 FaceAuthApp/
@@ -188,7 +188,7 @@ FaceAuthApp/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 `React Native 0.85` · `Hermes` · `Kotlin` · `Google ML Kit` · `ONNX Runtime` · `MobileFaceNet + ArcFace` · `PyTorch` · `AES-256-GCM` · `VisionCamera v5`
 
@@ -199,6 +199,6 @@ FaceAuthApp/
 **NHAI Face Auth** — National Highways Authority of India · Hackathon 7.0
 *Custom MobileFaceNet (99.28% LFW) · Offline-first · Privacy by design*
 
-🌐 **Live page:** enable GitHub Pages on `/docs` → `https://Eartherai.github.io/FaceAuthApp/`
+**Live page:** enable GitHub Pages on `/docs` → `https://Eartherai.github.io/FaceAuthApp/`
 
 </div>
