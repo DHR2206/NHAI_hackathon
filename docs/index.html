@@ -33,8 +33,6 @@ section{padding:100px 0}
 .orb{position:absolute;border-radius:50%;filter:blur(110px);pointer-events:none;z-index:0}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
 .reveal.in{opacity:1;transform:none}
-
-/* NAV */
 nav{position:sticky;top:0;z-index:100;backdrop-filter:blur(18px);background:rgba(7,11,20,.75);border-bottom:1px solid var(--line)}
 .ni{display:flex;align-items:center;justify-content:space-between;height:68px}
 .nb{display:flex;align-items:center;gap:12px;font-weight:900;font-size:18px}
@@ -45,8 +43,6 @@ nav{position:sticky;top:0;z-index:100;backdrop-filter:blur(18px);background:rgba
 .nc{background:var(--orange);color:#fff;font-weight:800;padding:10px 22px;border-radius:10px;font-size:14px;transition:all .2s}
 .nc:hover{background:var(--orange2);transform:translateY(-1px)}
 @media(max-width:900px){.nl{display:none}}
-
-/* HERO */
 #hero{position:relative;overflow:hidden;padding:120px 0 100px;text-align:center}
 #hero .orb.a{width:700px;height:700px;background:var(--orange);opacity:.09;top:-300px;right:-200px}
 #hero .orb.b{width:600px;height:600px;background:var(--cyan);opacity:.08;bottom:-200px;left:-200px}
@@ -67,16 +63,12 @@ h1{font-size:clamp(44px,7.5vw,92px);font-weight:900;letter-spacing:-2px;line-hei
 .btn-p:hover{background:var(--orange2);transform:translateY(-2px);box-shadow:0 16px 40px rgba(255,107,53,.4)}
 .btn-g{background:transparent;color:var(--text);border:1.5px solid var(--line2)}
 .btn-g:hover{border-color:var(--orange);color:var(--orange);transform:translateY(-2px)}
-
-/* LIVE SITE BANNER */
 .lbanner{background:linear-gradient(135deg,#0D2040,#0A1628);border:1px solid var(--cyan);border-radius:20px;padding:30px 40px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:60px}
 .lbanner .left{display:flex;align-items:center;gap:16px}
 .ldot{width:13px;height:13px;border-radius:50%;background:var(--green);box-shadow:0 0 18px var(--green);animation:pulse 2s infinite;flex-shrink:0}
 .lbanner h3{font-size:22px;font-weight:800;color:var(--cyan)}
 .lbanner p{color:var(--dim);margin-top:4px;font-size:15px}
 .lurl{font-family:'JetBrains Mono';font-size:14px;color:var(--cyan);background:rgba(0,212,255,.1);padding:12px 20px;border-radius:10px;border:1px solid rgba(0,212,255,.25);white-space:nowrap}
-
-/* SCREENSHOTS */
 .sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
 .sc{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:all .3s}
 .sc:hover{transform:translateY(-10px);border-color:var(--orange);box-shadow:0 30px 80px rgba(0,0,0,.6)}
@@ -84,8 +76,6 @@ h1{font-size:clamp(44px,7.5vw,92px);font-weight:900;letter-spacing:-2px;line-hei
 .slabel{padding:14px 18px;font-size:13px;font-weight:700;color:var(--dim);background:var(--surface)}
 @media(max-width:768px){.sgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.sgrid{grid-template-columns:1fr}}
-
-/* FEATURE CARDS */
 .fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
 .fc{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:30px;transition:all .3s;position:relative;overflow:hidden}
 .fc:hover{transform:translateY(-6px)}
@@ -104,8 +94,6 @@ h1{font-size:clamp(44px,7.5vw,92px);font-weight:900;letter-spacing:-2px;line-hei
 .fc li::before{content:"›";color:var(--cyan);flex-shrink:0}
 @media(max-width:900px){.fgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.fgrid{grid-template-columns:1fr}}
-
-/* MODEL */
 .mhero{background:linear-gradient(135deg,#0D1A30,#0A1220);border:1px solid var(--line2);border-radius:24px;padding:56px;position:relative;overflow:hidden;margin-top:56px}
 .mhero::before{content:"";position:absolute;width:400px;height:400px;background:var(--cyan);filter:blur(160px);opacity:.07;top:-150px;right:-100px}
 .mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
@@ -129,8 +117,6 @@ h1{font-size:clamp(44px,7.5vw,92px);font-weight:900;letter-spacing:-2px;line-hei
 .erow .acc{font-size:13px;font-weight:800;font-family:'JetBrains Mono'}
 .erow .best{font-size:10px;color:var(--green);font-weight:700}
 @media(max-width:700px){.erows{grid-template-columns:repeat(2,1fr)}}
-
-/* PIPELINE */
 .pipeline{margin-top:56px;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:48px;overflow-x:auto}
 .psteps{display:flex;align-items:stretch;min-width:860px;gap:0}
 .pstep{flex:1;background:var(--bg3);border:1px solid var(--line);border-radius:14px;padding:22px 14px;text-align:center}
@@ -139,8 +125,6 @@ h1{font-size:clamp(44px,7.5vw,92px);font-weight:900;letter-spacing:-2px;line-hei
 .pstep p{font-size:11.5px;color:var(--dim);line-height:1.5}
 .pstep .ms{font-family:'JetBrains Mono';font-size:11px;color:var(--faint);margin-top:8px}
 .parrow{display:flex;align-items:center;padding:0 5px;color:var(--faint);font-size:22px;font-weight:900;flex-shrink:0}
-
-/* ARCH */
 .agrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:56px}
 .ac{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:30px;transition:all .3s}
 .ac:hover{border-color:var(--cyan)}
@@ -156,8 +140,6 @@ h1{font-size:clamp(44px,7.5vw,92px);font-weight:900;letter-spacing:-2px;line-hei
 .tc{background:var(--surface2);border:1px solid var(--line2);border-radius:10px;padding:12px 20px;font-size:14px;font-weight:700;display:flex;align-items:center;gap:10px;transition:all .2s}
 .tc:hover{border-color:var(--orange);transform:translateY(-3px)}
 .td{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-
-/* SECURITY TABLE */
 .ttable{width:100%;border-collapse:collapse;margin-top:40px}
 .ttable th{background:var(--surface2);padding:14px 18px;text-align:left;font-size:12px;font-weight:800;letter-spacing:1.5px;color:var(--faint);text-transform:uppercase;border-bottom:1px solid var(--line)}
 .ttable td{padding:13px 18px;font-size:13.5px;border-bottom:1px solid var(--line);vertical-align:top}
@@ -166,8 +148,6 @@ h1{font-size:clamp(44px,7.5vw,92px);font-weight:900;letter-spacing:-2px;line-hei
 .ttable td:first-child{color:var(--text);font-weight:600}
 .ttable td:nth-child(2){color:var(--dim)}
 .ttable td:last-child{color:var(--green);font-weight:700;font-size:12px}
-
-/* COMPARE TABLE */
 .ctable{width:100%;border-collapse:collapse;margin-top:40px;border-radius:16px;overflow:hidden}
 .ctable th{padding:15px 20px;text-align:left;font-size:13px;font-weight:800;letter-spacing:.5px}
 .ctable th:first-child{background:var(--surface2);color:var(--faint)}
@@ -177,8 +157,6 @@ h1{font-size:clamp(44px,7.5vw,92px);font-weight:900;letter-spacing:-2px;line-hei
 .ctable td:nth-child(2){background:rgba(255,107,53,.05);text-align:center;color:var(--green);font-weight:700}
 .ctable td:last-child{background:rgba(0,0,0,.2);text-align:center;color:var(--dim)}
 .ctable tr:last-child td{border:0}
-
-/* DATALAKE */
 .dbbox{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:40px;margin-top:40px}
 .arow{display:grid;grid-template-columns:80px 1fr auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:center}
 .arow:last-child{border:0}
@@ -190,8 +168,6 @@ h1{font-size:clamp(44px,7.5vw,92px);font-weight:900;letter-spacing:-2px;line-hei
 .cblock{background:var(--bg3);border:1px solid var(--line);border-radius:12px;padding:24px;margin-top:20px;overflow-x:auto}
 .cblock pre{font-family:'JetBrains Mono';font-size:13px;line-height:1.9;color:var(--dim)}
 .kw{color:var(--purple)}.fn{color:var(--cyan)}.st{color:var(--green)}.cm{color:var(--faint)}
-
-/* BUILD */
 .bsteps{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:40px}
 .bstep{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px}
 .snum{width:38px;height:38px;border-radius:10px;background:var(--orange);display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:900;color:#fff;margin-bottom:16px}
@@ -199,14 +175,11 @@ h1{font-size:clamp(44px,7.5vw,92px);font-weight:900;letter-spacing:-2px;line-hei
 .bstep p{color:var(--dim);font-size:14px;line-height:1.6}
 .cmd{background:var(--bg3);border:1px solid var(--line);border-radius:8px;padding:11px 14px;font-family:'JetBrains Mono';font-size:12.5px;color:var(--cyan);margin-top:12px;display:block;word-break:break-all}
 @media(max-width:700px){.bsteps{grid-template-columns:1fr}}
-
-/* CLOSING */
 .closing{background:linear-gradient(135deg,rgba(255,107,53,.12),rgba(0,212,255,.08));border:1px solid rgba(255,107,53,.3);border-radius:28px;padding:80px 60px;text-align:center;position:relative;overflow:hidden}
 .closing::before{content:"";position:absolute;width:500px;height:500px;background:var(--orange);filter:blur(180px);opacity:.07;top:-200px;left:50%;transform:translateX(-50%)}
 .closing h2{font-size:clamp(34px,5.5vw,64px);font-weight:900;position:relative;letter-spacing:-1.5px}
 .closing p{max-width:620px;margin:20px auto 40px;color:var(--dim);font-size:18px;position:relative;line-height:1.7}
 @media(max-width:600px){.closing{padding:50px 24px}}
-
 footer{border-top:1px solid var(--line);padding:50px 0;text-align:center}
 footer p{color:var(--faint);font-size:14px}
 .flinks{display:flex;gap:24px;justify-content:center;margin-top:18px;flex-wrap:wrap}
@@ -218,9 +191,9 @@ footer p{color:var(--faint);font-size:14px}
 <body>
 
 <nav><div class="wrap ni">
-  <div class="nb"><img src="nhai_logo.png" alt="NHAI">NHAI <span class="acc">&nbsp;FACE AUTH</span></div>
+  <div class="nb"><span style="width:36px;height:36px;background:var(--orange);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;color:#fff">NH</span>NHAI <span class="acc">&nbsp;FACE AUTH</span></div>
   <div class="nl"><a href="#features">Features</a><a href="#model">AI Model</a><a href="#screens">App</a><a href="#architecture">Architecture</a><a href="#security">Security</a><a href="#build">Build</a></div>
-  <a class="nc" href="https://github.com/Eartherai/FaceAuthApp/releases/latest">⬇ Download APK</a>
+  <a class="nc" href="https://github.com/DHR2206/NHAI_hackathon/releases/latest">⬇ Download APK</a>
 </div></nav>
 
 <section id="hero" style="position:relative;overflow:hidden;padding:120px 0 100px;text-align:center">
@@ -228,7 +201,7 @@ footer p{color:var(--faint);font-size:14px}
   <div class="orb b" style="width:600px;height:600px;background:var(--cyan);opacity:.08;bottom:-200px;left:-200px;position:absolute"></div>
   <div class="wrap" style="position:relative;z-index:1">
     <div class="hbadge"><span class="pulse"></span>NHAI HACKATHON 7.0 &nbsp;·&nbsp; DATALAKE 3.0 READY</div>
-    <img src="nhai_logo.png" alt="NHAI" class="hlogo">
+    <div style="width:88px;height:88px;background:var(--orange);border-radius:20px;padding:8px;margin:0 auto 28px;display:flex;align-items:center;justify-content:center;box-shadow:0 20px 60px rgba(0,0,0,.5);font-weight:900;font-size:28px;color:#fff">NH</div>
     <h1><span class="gradient-text">NHAI Face Auth</span></h1>
     <p style="font-size:clamp(20px,3vw,36px);color:var(--dim);font-weight:600;margin-top:10px;letter-spacing:-.5px">Offline Biometric Authentication for Highway Worksites</p>
     <p class="hsub">A fully offline Android app that verifies worker identity by face — powered by a <strong>custom-trained MobileFaceNet (99.28% LFW)</strong> — with multi-challenge liveness detection, anti-spoofing, privacy-preserving BioHash templates, GPS geofencing, and NHAI Datalake 3.0 sync. <strong>No signal needed. No server. Works anywhere.</strong></p>
@@ -241,42 +214,19 @@ footer p{color:var(--faint);font-size:14px}
       <div class="hs"><div class="n">100%</div><div class="l">Offline Capable</div></div>
     </div>
     <div class="cta">
-      <a class="btn btn-p" href="https://github.com/Eartherai/FaceAuthApp/releases/latest">⬇ Download APK</a>
-      <a class="btn btn-g" href="https://github.com/Eartherai/FaceAuthApp">View Source on GitHub</a>
-      <a class="btn btn-g" href="https://github.com/Eartherai/FaceAuthApp/blob/main/FaceAuthApp/TECHNICAL_DOCUMENT.md">Technical Document</a>
+      <a class="btn btn-p" href="https://github.com/DHR2206/NHAI_hackathon/releases/latest">⬇ Download APK</a>
+      <a class="btn btn-g" href="https://github.com/DHR2206/NHAI_hackathon">View Source on GitHub</a>
+      <a class="btn btn-g" href="https://github.com/DHR2206/NHAI_hackathon/blob/main/FaceAuthApp/TECHNICAL_DOCUMENT.md">Technical Document</a>
     </div>
     <div class="lbanner reveal">
-      <div class="left"><div class="ldot"></div><div><h3>🌐 This page is live — share it with the judges</h3><p>Full submission page with all features, model details, screenshots and architecture</p></div></div>
-      <a href="https://eartherai.github.io/FaceAuthApp/" class="lurl">eartherai.github.io/FaceAuthApp</a>
+      <div class="left"><div class="ldot"></div><div><h3>🌐 Live on Vercel — share with judges</h3><p>Full submission page with all features, model details, screenshots and architecture</p></div></div>
+      <span class="lurl">nhai-face-auth.vercel.app</span>
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- SCREENSHOTS -->
-<section id="screens" style="background:var(--bg2)">
-  <div class="wrap">
-    <div class="eyebrow">The App</div>
-    <h2 class="st">Twelve screens. One dark command centre.</h2>
-    <p class="lead">Built for outdoor use. High contrast, large targets, voice guidance in Hindi and English. Everything works offline.</p>
-    <div class="sgrid reveal">
-      <div class="sc"><img src="screenshots/home.png" alt="Home"><div class="slabel">🏠 Command Centre — KPIs + quick actions</div></div>
-      <div class="sc"><img src="screenshots/enroll.png" alt="Enroll"><div class="slabel">👤 Face Enrolment — capture + BioHash</div></div>
-      <div class="sc"><img src="screenshots/dashboard.png" alt="Dashboard"><div class="slabel">📊 Security Analytics — live metrics</div></div>
-      <div class="sc"><img src="screenshots/attendance.png" alt="Attendance"><div class="slabel">🕒 Attendance — check-in / check-out</div></div>
-      <div class="sc"><img src="screenshots/calendar.png" alt="Calendar"><div class="slabel">📅 Calendar — monthly attendance view</div></div>
-      <div class="sc"><img src="screenshots/people.png" alt="People"><div class="slabel">👥 Worker Registry — enrolled roster</div></div>
-      <div class="sc"><img src="screenshots/history.png" alt="History"><div class="slabel">📋 Auth History — filterable log</div></div>
-      <div class="sc"><img src="screenshots/admin.png" alt="Admin"><div class="slabel">🛠️ Admin Console — 2FA protected</div></div>
-      <div class="sc"><img src="screenshots/settings.png" alt="Settings"><div class="slabel">⚙️ System Settings — full configuration</div></div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- FEATURES -->
 <section id="features">
   <div class="wrap">
     <div class="eyebrow">What It Does</div>
@@ -292,7 +242,7 @@ footer p{color:var(--faint);font-size:14px}
       <div class="fc c1 reveal"><span class="fi">📡</span><h3>Offline-First Sync</h3><p>Every operation works with <strong>zero connectivity</strong>. A background engine pushes records to NHAI Datalake 3.0 with exponential-backoff retry when a signal returns.</p><ul><li>All writes to encrypted local store first</li><li>Connectivity watcher triggers sync</li><li>Delta push — only changed records</li><li>Server-wins conflict resolution</li></ul></div>
       <div class="fc c2 reveal"><span class="fi">📊</span><h3>Live Analytics Dashboard</h3><p>On-device KPIs computed <strong>locally and offline</strong>. Liveness pass rate, match confidence, spoof blocks, PPE compliance, 7-day trend.</p><ul><li>Liveness pass rate · spoof blocks</li><li>Avg match confidence · geofence compliance</li><li>7-day trend chart</li><li>Adaptive threshold monitoring</li></ul></div>
       <div class="fc c3 reveal"><span class="fi">🆔</span><h3>Aadhaar Linkage</h3><p>Optional Aadhaar with <strong>Verhoeff checksum</strong> validation. Masked in all UI (<code>XXXX XXXX 1234</code>). Aligned with Indian government ID standards.</p><ul><li>Verhoeff algorithm catches transpositions</li><li>Masked in all UI displays</li><li>Stored encrypted with the worker record</li></ul></div>
-      <div class="fc c4 reveal"><span class="fi">🔒</span><h3>Encryption & Lockout</h3><p><strong>AES-256-GCM</strong> at rest. 3-attempt lockout with 30-second cooldown. GDPR-style retention with automatic purge of expired records.</p><ul><li>AES-256-GCM authenticated encryption</li><li>3-attempt lockout + 30 s cooldown</li><li>Auto-purge expired biometric records</li></ul></div>
+      <div class="fc c4 reveal"><span class="fi">🔒</span><h3>Encryption &amp; Lockout</h3><p><strong>AES-256-GCM</strong> at rest. 3-attempt lockout with 30-second cooldown. GDPR-style retention with automatic purge of expired records.</p><ul><li>AES-256-GCM authenticated encryption</li><li>3-attempt lockout + 30 s cooldown</li><li>Auto-purge expired biometric records</li></ul></div>
       <div class="fc c5 reveal"><span class="fi">🗣️</span><h3>Hindi / English Localization</h3><p><strong>TTS voice prompts</strong> for all liveness challenges. High-contrast UI for outdoor sunlight. Large touch targets for gloved hands in the field.</p><ul><li>All challenges spoken in Hindi + English</li><li>Min 48dp touch targets</li><li>High-contrast outdoor dark theme</li></ul></div>
       <div class="fc c6 reveal"><span class="fi">🛠️</span><h3>Admin Console</h3><p>2FA-protected admin login. Site management, threshold control, sync status, system health — all in a separate protected flow.</p><ul><li>2FA admin login</li><li>Site + geofence configuration</li><li>Model threshold controls</li><li>System health + sync status</li></ul></div>
     </div>
@@ -301,7 +251,6 @@ footer p{color:var(--faint);font-size:14px}
 
 <div class="divider"></div>
 
-<!-- MODEL -->
 <section id="model" style="background:var(--bg2)">
   <div class="wrap">
     <div class="eyebrow">The AI We Built</div>
@@ -319,9 +268,9 @@ footer p{color:var(--faint);font-size:14px}
         <div class="ms2"><div class="n g">✓ ALL</div><div class="l">Constraints Passed</div></div>
       </div>
       <div class="crows">
-        <div class="crow"><div class="val">99.28%</div><div class="crit">LFW Accuracy · required > 95%</div><div class="pass">✓ PASS — exceeded by +4.28%</div></div>
-        <div class="crow"><div class="val">1.15 MB</div><div class="crit">Model Size · required < 20 MB</div><div class="pass">✓ PASS — 17× smaller than limit</div></div>
-        <div class="crow"><div class="val">63 ms</div><div class="crit">CPU Latency · required < 1000 ms</div><div class="pass">✓ PASS — 16× faster than limit</div></div>
+        <div class="crow"><div class="val">99.28%</div><div class="crit">LFW Accuracy · required &gt; 95%</div><div class="pass">✓ PASS — exceeded by +4.28%</div></div>
+        <div class="crow"><div class="val">1.15 MB</div><div class="crit">Model Size · required &lt; 20 MB</div><div class="pass">✓ PASS — 17× smaller than limit</div></div>
+        <div class="crow"><div class="val">63 ms</div><div class="crit">CPU Latency · required &lt; 1000 ms</div><div class="pass">✓ PASS — 16× faster than limit</div></div>
       </div>
       <div style="margin-top:36px">
         <h3 style="font-size:13px;font-weight:800;color:var(--faint);letter-spacing:2px;text-transform:uppercase;margin-bottom:14px">Training Configuration</h3>
@@ -363,7 +312,6 @@ footer p{color:var(--faint);font-size:14px}
 
 <div class="divider"></div>
 
-<!-- PIPELINE -->
 <section>
   <div class="wrap">
     <div class="eyebrow">How It Works</div>
@@ -391,7 +339,6 @@ footer p{color:var(--faint);font-size:14px}
 
 <div class="divider"></div>
 
-<!-- ARCHITECTURE -->
 <section id="architecture" style="background:var(--bg2)">
   <div class="wrap">
     <div class="eyebrow">Engineering</div>
@@ -422,7 +369,7 @@ footer p{color:var(--faint);font-size:14px}
         <li>i18n: locale management</li>
         <li>sessionStore: auth session lifecycle</li>
       </ul></div>
-      <div class="ac reveal"><div class="ach"><div class="abar" style="background:var(--purple)"></div><h3>Data & Sync (TypeScript)</h3></div><ul>
+      <div class="ac reveal"><div class="ach"><div class="abar" style="background:var(--purple)"></div><h3>Data &amp; Sync (TypeScript)</h3></div><ul>
         <li>database: encrypted AsyncStorage CRUD</li>
         <li>syncService: offline-first background engine</li>
         <li>datalakeIntegration: NHAI Datalake 3.0 API</li>
@@ -453,10 +400,9 @@ footer p{color:var(--faint);font-size:14px}
 
 <div class="divider"></div>
 
-<!-- SECURITY -->
 <section id="security">
   <div class="wrap">
-    <div class="eyebrow">Security & Privacy</div>
+    <div class="eyebrow">Security &amp; Privacy</div>
     <h2 class="st">Hard to fool. Safe with the data.</h2>
     <p class="lead">Every attack vector we considered — and exactly how we blocked it.</p>
     <div style="overflow-x:auto" class="reveal">
@@ -468,7 +414,7 @@ footer p{color:var(--faint);font-size:14px}
           <tr><td>Pre-recorded video</td><td>Video with correct movements</td><td>Randomized 3-of-4 challenge order every session</td><td>✓ BLOCKED</td></tr>
           <tr><td>Proxy attendance</td><td>One person for another</td><td>Face recognition (99.28% LFW) + 3-factor liveness</td><td>✓ BLOCKED</td></tr>
           <tr><td>Location fraud</td><td>GPS spoofing / remote work</td><td>Haversine geofence vs configured site radius</td><td>✓ BLOCKED</td></tr>
-          <tr><td>Duplicate enrolment</td><td>Same person registers twice</td><td>CNN cosine similarity ≥ 0.55 rejection</td><td>✓ BLOCKED</td></tr>
+          <tr><td>Duplicate enrolment</td><td>Same person registers twice</td><td>CNN cosine similarity rejection at enrol</td><td>✓ BLOCKED</td></tr>
           <tr><td>Device theft</td><td>Physical access to device</td><td>AES-256-GCM encrypted store + lockout</td><td>✓ BLOCKED</td></tr>
           <tr><td>Biometric extraction</td><td>Stealing the template</td><td>BioHash ISO/IEC 24745 — raw vector never stored</td><td>✓ BLOCKED</td></tr>
           <tr><td>Brute force</td><td>Repeated auth attempts</td><td>3-attempt lockout + 30 s cooldown</td><td>✓ BLOCKED</td></tr>
@@ -481,7 +427,6 @@ footer p{color:var(--faint);font-size:14px}
 
 <div class="divider"></div>
 
-<!-- COMPARISON -->
 <section style="background:var(--bg2)">
   <div class="wrap">
     <div class="eyebrow">Why We Win</div>
@@ -509,7 +454,6 @@ footer p{color:var(--faint);font-size:14px}
 
 <div class="divider"></div>
 
-<!-- DATALAKE -->
 <section id="datalake">
   <div class="wrap">
     <div class="eyebrow">Integration</div>
@@ -545,7 +489,6 @@ footer p{color:var(--faint);font-size:14px}
 
 <div class="divider"></div>
 
-<!-- BUILD -->
 <section id="build" style="background:var(--bg2)">
   <div class="wrap">
     <div class="eyebrow">Get Started</div>
@@ -553,7 +496,7 @@ footer p{color:var(--faint);font-size:14px}
     <p class="lead">Full source on GitHub. One Gradle command produces a standalone APK — no Metro, no server, no setup on the phone.</p>
     <div class="bsteps">
       <div class="bstep reveal"><div class="snum">1</div><h3>Install the APK (fastest)</h3><p>Download from GitHub Releases, copy to your Android phone, tap to install. Or use ADB directly.</p><code class="cmd">adb install -r NHAI-FaceAuth.apk</code></div>
-      <div class="bstep reveal"><div class="snum">2</div><h3>Clone & Install</h3><p>Requires Node 18+, JDK 17, Android SDK 35 + NDK (via Android Studio SDK Manager).</p><code class="cmd">git clone https://github.com/Eartherai/FaceAuthApp.git<br>cd FaceAuthApp/FaceAuthApp<br>npm install</code></div>
+      <div class="bstep reveal"><div class="snum">2</div><h3>Clone &amp; Install</h3><p>Requires Node 18+, JDK 17, Android SDK 35 + NDK (via Android Studio SDK Manager).</p><code class="cmd">git clone https://github.com/DHR2206/NHAI_hackathon.git<br>cd FaceAuthApp/FaceAuthApp<br>npm install</code></div>
       <div class="bstep reveal"><div class="snum">3</div><h3>Build Standalone APK</h3><p>Standalone debug APK — bundles JS + ML models. Runs without Metro at runtime.</p><code class="cmd">cd android<br>./gradlew assembleDebug<br># output: app/build/outputs/apk/debug/</code></div>
       <div class="bstep reveal"><div class="snum">4</div><h3>Reproduce the Model</h3><p>Open the Kaggle notebook, attach CASIA-WebFace, GPU T4, Run All. Exports pt + onnx + int8 with automated constraints check.</p><code class="cmd">FaceAuthApp/notebook/<br>mobilefacenet_training.ipynb</code></div>
     </div>
@@ -562,15 +505,14 @@ footer p{color:var(--faint);font-size:14px}
 
 <div class="divider"></div>
 
-<!-- CLOSING -->
 <section>
   <div class="wrap">
     <div class="closing reveal">
       <h2>Ready for the field.<br><span class="gradient-text">Built to win.</span></h2>
       <p>A model we trained from scratch at 99.28% LFW, wrapped in an offline-first, privacy-first app that makes NHAI worksite attendance trustworthy — with or without a signal, in the harshest conditions India's highways can throw at it.</p>
       <div class="cta">
-        <a class="btn btn-p" href="https://github.com/Eartherai/FaceAuthApp/releases/latest">⬇ Download APK</a>
-        <a class="btn btn-g" href="https://github.com/DHR2206/NHAI_hackathon.git">View on GitHub</a>
+        <a class="btn btn-p" href="https://github.com/DHR2206/NHAI_hackathon/releases/latest">⬇ Download APK</a>
+        <a class="btn btn-g" href="https://github.com/DHR2206/NHAI_hackathon">View on GitHub</a>
         <a class="btn btn-g" href="https://github.com/DHR2206/NHAI_hackathon/blob/main/FaceAuthApp/TECHNICAL_DOCUMENT.md">Technical Docs</a>
       </div>
       <div style="margin-top:48px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px">
@@ -595,8 +537,8 @@ footer p{color:var(--faint);font-size:14px}
   <p><strong>NHAI Face Auth</strong> — National Highways Authority of India · Hackathon 7.0 · MIT License</p>
   <p style="margin-top:6px">Custom MobileFaceNet (99.28% LFW) · Offline-first · Privacy by design</p>
   <div class="flinks">
-    <a href="https://github.com/DHR2206/NHAI_hackathon.git">GitHub</a>
-    <a href="https://github.com/Eartherai/FaceAuthApp/releases/latest">Download APK</a>
+    <a href="https://github.com/DHR2206/NHAI_hackathon">GitHub</a>
+    <a href="https://github.com/DHR2206/NHAI_hackathon/releases/latest">Download APK</a>
     <a href="https://github.com/DHR2206/NHAI_hackathon/blob/main/FaceAuthApp/notebook/mobilefacenet_training.ipynb">Training Notebook</a>
     <a href="https://github.com/DHR2206/NHAI_hackathon/blob/main/FaceAuthApp/artifacts/mobilefacenet_fp32.onnx">Model Weights</a>
     <a href="https://github.com/DHR2206/NHAI_hackathon/blob/main/docs/MODEL.md">Model Details</a>
