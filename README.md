@@ -358,7 +358,7 @@ NHAI_hackathon/
 
 | Document | Description |
 |---|---|
-| [** Full Demo Page**](https://dhr2206.github.io/NHAI_hackathon/) | Interactive site: every feature, model details, architecture, comparison |
+| [** Full Demo Page**](https://nhai-hackathon-khaki.vercel.app/) | Interactive site: every feature, model details, architecture, comparison |
 | [** MODEL.md**](docs/MODEL.md) | Training setup, architecture, results, reproduction, integration |
 | [** FEATURES.md**](docs/FEATURES.md) | Every feature, how it works, why it matters, criterion map |
 | [** ARCHITECTURE.md**](docs/ARCHITECTURE.md) | Pipeline, modules, data flow, performance budget |
