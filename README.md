@@ -8,24 +8,24 @@
 National Highways Authority of India · Hackathon 7.0 · Datalake 3.0 Ready</p>
 
 <p>
-  <img src="https://img.shields.io/badge/LFW_Accuracy-99.28%25-00E676?style=for-the-badge&labelColor=0A0E1A" alt="LFW"/>
-  <img src="https://img.shields.io/badge/Model-1.15_MB_INT8-FF6B35?style=for-the-badge&labelColor=0A0E1A" alt="Model"/>
-  <img src="https://img.shields.io/badge/Inference-63_ms-00D4FF?style=for-the-badge&labelColor=0A0E1A" alt="Speed"/>
-  <img src="https://img.shields.io/badge/Works-100%25_Offline-1F5FCB?style=for-the-badge&labelColor=0A0E1A" alt="Offline"/>
+ <img src="https://img.shields.io/badge/LFW_Accuracy-99.28%25-00E676?style=for-the-badge&labelColor=0A0E1A" alt="LFW"/>
+ <img src="https://img.shields.io/badge/Model-1.15_MB_INT8-FF6B35?style=for-the-badge&labelColor=0A0E1A" alt="Model"/>
+ <img src="https://img.shields.io/badge/Inference-63_ms-00D4FF?style=for-the-badge&labelColor=0A0E1A" alt="Speed"/>
+ <img src="https://img.shields.io/badge/Works-100%25_Offline-1F5FCB?style=for-the-badge&labelColor=0A0E1A" alt="Offline"/>
 </p>
 <p>
-  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&labelColor=0A0E1A" alt="Android"/>
-  <img src="https://img.shields.io/badge/React_Native-0.85-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=0A0E1A" alt="RN"/>
-  <img src="https://img.shields.io/badge/Kotlin-Native_Module-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white&labelColor=0A0E1A" alt="Kotlin"/>
-  <img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&labelColor=0A0E1A" alt="License"/>
+ <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&labelColor=0A0E1A" alt="Android"/>
+ <img src="https://img.shields.io/badge/React_Native-0.85-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=0A0E1A" alt="RN"/>
+ <img src="https://img.shields.io/badge/Kotlin-Native_Module-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white&labelColor=0A0E1A" alt="Kotlin"/>
+ <img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&labelColor=0A0E1A" alt="License"/>
 </p>
 
 <p>
-  <a href="https://eartherai.github.io/FaceAuthApp/"><strong> Full Demo Page</strong></a> &nbsp;·&nbsp;
-  <a href="../../releases/latest"><strong> Download APK</strong></a> &nbsp;·&nbsp;
-  <a href="FaceAuthApp/notebook/mobilefacenet_training.ipynb"><strong> Training Notebook</strong></a> &nbsp;·&nbsp;
-  <a href="docs/MODEL.md"><strong> Model Details</strong></a> &nbsp;·&nbsp;
-  <a href="docs/FEATURES.md"><strong> All Features</strong></a>
+ <a href="https://dhr2206.github.io/NHAI_hackathon/"><strong> Full Demo Page</strong></a> &nbsp;·&nbsp;
+ <a href="../../releases/latest"><strong> Download APK</strong></a> &nbsp;·&nbsp;
+ <a href="FaceAuthApp/notebook/mobilefacenet_training.ipynb"><strong> Training Notebook</strong></a> &nbsp;·&nbsp;
+ <a href="docs/MODEL.md"><strong> Model Details</strong></a> &nbsp;·&nbsp;
+ <a href="docs/FEATURES.md"><strong> All Features</strong></a>
 </p>
 
 </div>
@@ -59,18 +59,18 @@ National Highways Authority of India · Hackathon 7.0 · Datalake 3.0 Ready</p>
 
 NHAI manages **50,000+ construction workers** across remote highway stretches with **little or no connectivity**. Marking attendance reliably — and proving *who* was actually on-site — is hard:
 
--  Paper registers are tampered with — proxy punching is widespread
--  Cloud biometric APIs are useless without a signal
--  No way to prove a worker is physically at the *correct* site
--  No enforcement of safety gear (helmet, hi-vis vest) at entry
+- Paper registers are tampered with — proxy punching is widespread
+- Cloud biometric APIs are useless without a signal
+- No way to prove a worker is physically at the *correct* site
+- No enforcement of safety gear (helmet, hi-vis vest) at entry
 
-##  Our Solution
+## Our Solution
 
 A **fully offline** Android app that solves all four problems at once:
 
 ```
 Face detected → 3 liveness challenges → anti-spoof check → CNN match (99.28% LFW)
-     → GPS geofence check → PPE compliance check → attendance logged → sync to Datalake 3.0
+ → GPS geofence check → PPE compliance check → attendance logged → sync to Datalake 3.0
 ```
 
 > **Everything runs on-device.** No server. No internet. No cloud. Works in the most remote highway stretch in India.
@@ -85,7 +85,7 @@ Face detected → 3 liveness challenges → anti-spoof check → CNN match (99.2
 
 | Metric | Our Result | Hackathon Constraint | Verdict |
 |:---:|:---:|:---:|:---:|
-| **LFW 10-fold Accuracy** | **99.28%** | > 95% |  **+4.28% above requirement** |
+| **LFW 10-fold Accuracy** | **99.28%** | > 95% | **+4.28% above requirement** |
 | **Model Size (INT8)** | **1.15 MB** | < 20 MB | **17× smaller than limit** |
 | **CPU Latency/Face** | **63 ms** | < 1000 ms | **16× faster than limit** |
 | **Self-trained** | MobileFaceNet + ArcFace | Required | **100% custom** |
@@ -107,7 +107,7 @@ Face detected → 3 liveness challenges → anti-spoof check → CNN match (99.2
 | **Export** | PyTorch → ONNX FP32 → dynamic INT8 (parity-checked) |
 
 <details>
-<summary><strong>📈 Full training curve (click to expand)</strong></summary>
+<summary><strong> Full training curve (click to expand)</strong></summary>
 
 | Epoch | LFW Acc | | Epoch | LFW Acc |
 |:---:|:---:|---|:---:|:---:|
@@ -116,20 +116,20 @@ Face detected → 3 liveness challenges → anti-spoof check → CNN match (99.2
 | 4 | 96.43% | | 28 | 98.83% |
 | 7 | 97.22% | | 31 | 99.07% |
 | 10 | 97.78% | | 33 | 99.13% |
-| 12 | 98.07% | | **36** | **99.28% ★ BEST** |
+| 12 | 98.07% | | **36** | **99.28% BEST** |
 | 17 | 98.47% | | 40 | 99.15% |
 
 </details>
 
 **On-device resilience:** the app runs the ONNX FP32 model with an **eye-aligned geometric landmark fallback** — recognition works on *every* Android phone, even those whose ONNX runtime lacks the quantized operator set.
 
-📓 **Reproduce it yourself:** [`FaceAuthApp/notebook/mobilefacenet_training.ipynb`](FaceAuthApp/notebook/mobilefacenet_training.ipynb) — open on Kaggle, attach CASIA-WebFace, set GPU T4, Run All.
+ **Reproduce it yourself:** [`FaceAuthApp/notebook/mobilefacenet_training.ipynb`](FaceAuthApp/notebook/mobilefacenet_training.ipynb) — open on Kaggle, attach CASIA-WebFace, set GPU T4, Run All.
 
  **Trained weights:** [`FaceAuthApp/artifacts/`](FaceAuthApp/artifacts/) — `mobilefacenet_fp32.pt` · `mobilefacenet_fp32.onnx` · `mobilefacenet_int8.onnx`
 
 ---
 
-##  Features
+## Features
 
 <details open>
 <summary><strong> Face Recognition & Matching</strong></summary>
@@ -143,14 +143,14 @@ Face detected → 3 liveness challenges → anti-spoof check → CNN match (99.2
 </details>
 
 <details open>
-<summary><strong>👁️ Liveness + Anti-Spoofing (3-layer)</strong></summary>
+<summary><strong> Liveness + Anti-Spoofing (3-layer)</strong></summary>
 
 - **Layer 1:** Active liveness — 3 randomized challenges (blink / smile / head-turn)
-  - Baseline-relative head-turn detection — works at any camera angle
-  - Live progress bar guides the user in real time
-  - Randomized order every session — defeats pre-recorded video attacks
+ - Baseline-relative head-turn detection — works at any camera angle
+ - Live progress bar guides the user in real time
+ - Randomized order every session — defeats pre-recorded video attacks
 - **Layer 2:** Passive anti-spoof — Laplacian-variance texture analysis (native Kotlin, <10 ms)
-  - Printed photos and phone screens blocked before matching begins
+ - Printed photos and phone screens blocked before matching begins
 - **Layer 3:** Face classification quality — eye-open probability + smile probability gating
 
 </details>
@@ -179,54 +179,50 @@ Face detected → 3 liveness challenges → anti-spoof check → CNN match (99.2
 
 ---
 
-##  Architecture
+## Architecture
 
 ```
-┌────────────────────────────────────────────────────────────────┐
-│                   React Native 0.85  (Hermes, New Arch)         │
-│   Home · Enrol · Authenticate · PPE · Dashboard · Admin · …     │
-└─────────────────┬──────────────────────────────┬───────────────┘
-                  │                              │
-     ┌────────────▼────────────┐    ┌────────────▼──────────────┐
-     │  Kotlin Native Module    │    │  TypeScript Services       │
-     │  FaceProcessor           │    │  embeddingUtils (cosine)   │
-     │  • ML Kit async detect   │    │  bioHash (ISO/IEC 24745)   │
-     │  • MobileFaceNet FP32    │    │  encryption (AES-256-GCM)  │
-     │  • Eye-aligned crop      │    │  geofencing · ppeDetection │
-     │  • Laplacian anti-spoof  │    │  syncService · datalake    │
-     │  • Geometric fallback    │    │  adaptiveThreshold · i18n  │
-     └────────────┬────────────┘    └────────────┬──────────────┘
-                  │                              │
-     ┌────────────▼──────────────────────────────▼──────────────┐
-     │   Encrypted local store (AsyncStorage + AES-256-GCM)      │
-     │   Background sync → NHAI Datalake 3.0 API                 │
-     └───────────────────────────────────────────────────────────┘
+
+ React Native 0.85 (Hermes, New Arch) 
+ Home · Enrol · Authenticate · PPE · Dashboard · Admin · … 
+
+ Kotlin Native Module TypeScript Services 
+ FaceProcessor embeddingUtils (cosine) 
+ • ML Kit async detect bioHash (ISO/IEC 24745) 
+ • MobileFaceNet FP32 encryption (AES-256-GCM) 
+ • Eye-aligned crop geofencing · ppeDetection 
+ • Laplacian anti-spoof syncService · datalake 
+ • Geometric fallback adaptiveThreshold · i18n 
+
+ Encrypted local store (AsyncStorage + AES-256-GCM) 
+ Background sync → NHAI Datalake 3.0 API 
+
 ```
 
 **End-to-end pipeline latency: 300–500 ms** (capture 50ms + detect 100ms + embed 63ms + match <10ms + record <50ms)
 
 ---
 
-##  Security — Every Attack, Every Mitigation
+## Security — Every Attack, Every Mitigation
 
 | Threat | Attack | Mitigation | Status |
 |---|---|---|:---:|
-| Photo spoof | Printed photo to camera | Laplacian-variance texture (native Kotlin) | ✅ |
-| Screen replay | Video on another phone | Laplacian flat-texture detection + liveness | ✅ |
-| Pre-recorded video | Video with correct moves | Randomized 3-of-4 challenge order | ✅ |
-| Proxy attendance | Person A for person B | CNN recognition 99.28% + liveness | ✅ |
-| Location fraud | Remote / GPS spoof | Haversine geofence vs site boundary | ✅ |
-| Duplicate enrolment | Re-register same person | Cosine similarity ≥ 0.55 rejection | ✅ |
-| Device theft | Physical access | AES-256-GCM encrypted store + lockout | ✅ |
-| Biometric extraction | Steal template | BioHash ISO/IEC 24745 — raw never stored | ✅ |
-| Brute force | Repeated attempts | 3-attempt lockout + 30 s cooldown | ✅ |
-| Record tampering | Edit attendance | Server-timestamp validation + audit trail | ✅ |
+| Photo spoof | Printed photo to camera | Laplacian-variance texture (native Kotlin) | |
+| Screen replay | Video on another phone | Laplacian flat-texture detection + liveness | |
+| Pre-recorded video | Video with correct moves | Randomized 3-of-4 challenge order | |
+| Proxy attendance | Person A for person B | CNN recognition 99.28% + liveness | |
+| Location fraud | Remote / GPS spoof | Haversine geofence vs site boundary | |
+| Duplicate enrolment | Re-register same person | Cosine similarity ≥ 0.55 rejection | |
+| Device theft | Physical access | AES-256-GCM encrypted store + lockout | |
+| Biometric extraction | Steal template | BioHash ISO/IEC 24745 — raw never stored | |
+| Brute force | Repeated attempts | 3-attempt lockout + 30 s cooldown | |
+| Record tampering | Edit attendance | Server-timestamp validation + audit trail | |
 
 ---
 
 ## Why We Win
 
-| Capability | ✅ NHAI Face Auth | ❌ Typical Systems |
+| Capability | NHAI Face Auth | Typical Systems |
 |---|---|---|
 | Offline operation | Full offline — every feature on-device | Requires connectivity |
 | Recognition model | Self-trained 99.28% LFW, 1.15 MB | Cloud API or 10–50 MB models |
@@ -240,19 +236,19 @@ Face detected → 3 liveness challenges → anti-spoof check → CNN match (99.2
 
 ---
 
-##  Datalake 3.0 Integration
+## Datalake 3.0 Integration
 
 ```typescript
 import { FaceAuthModule } from './FaceAuthApp/src/services/datalakeIntegration';
 
 // One call: face auth + liveness + geofence + attendance + sync
 const result = await FaceAuthModule.markAttendance(imagePath);
-// result.authenticated      → true / false
-// result.withinGeofence     → true / false
-// result.attendanceAction   → "CHECKED IN" / "CHECKED OUT"
-// result.matchScore         → 0.0 – 1.0
-// result.livenessPassed     → true / false
-// result.bioHashVerified    → true / false
+// result.authenticated → true / false
+// result.withinGeofence → true / false
+// result.attendanceAction → "CHECKED IN" / "CHECKED OUT"
+// result.matchScore → 0.0 – 1.0
+// result.livenessPassed → true / false
+// result.bioHashVerified → true / false
 
 // Background sync when online
 await FaceAuthModule.syncToServer();
@@ -262,7 +258,7 @@ await FaceAuthModule.syncToServer();
 
 ---
 
-##  Quick Start
+## Quick Start
 
 ### A) Install APK (no build needed)
 ```bash
@@ -273,8 +269,8 @@ adb install -r NHAI-FaceAuth.apk
 
 ### B) Build from source
 ```bash
-git clone https://github.com/Eartherai/FaceAuthApp.git
-cd FaceAuthApp/FaceAuthApp
+git clone https://github.com/DHR2206/NHAI_hackathon.git
+cd NHAI_hackathon/FaceAuthApp
 npm install
 cd android && ./gradlew assembleDebug
 # → android/app/build/outputs/apk/debug/app-debug.apk
@@ -287,14 +283,14 @@ cd android && ./gradlew assembleDebug
 1. Open FaceAuthApp/notebook/mobilefacenet_training.ipynb on Kaggle
 2. Attach CASIA-WebFace .rec dataset
 3. Settings → Accelerator → GPU T4
-4. Run All  →  exports fp32.pt / fp32.onnx / int8.onnx + constraints check
+4. Run All → exports fp32.pt / fp32.onnx / int8.onnx + constraints check
 ```
 
 ### D) Tests
 ```bash
 cd FaceAuthApp
-npx jest          # bioHash, embeddings, qualityGate, Aadhaar, retryPolicy…
-npx tsc --noEmit  # TypeScript type-check
+npx jest # bioHash, embeddings, qualityGate, Aadhaar, retryPolicy…
+npx tsc --noEmit # TypeScript type-check
 ```
 
 ---
@@ -302,40 +298,40 @@ npx tsc --noEmit  # TypeScript type-check
 ## Repository Structure
 
 ```
-nhai-face-auth/
-├── README.md                          ← you are here
-├── LICENSE                            (MIT)
-├── docs/                              GitHub Pages site
-│   ├── index.html                     full interactive demo page
-│   ├── nhai_logo.png
-│   ├── screenshots/                   9 app screenshots
-│   ├── MODEL.md                       model training deep-dive
-│   ├── FEATURES.md                    complete feature notes
-│   ├── ARCHITECTURE.md               system design
-│   ├── SECURITY.md                    threat model
-│   └── BUILD.md                       reproducible build guide
-├── FaceAuthApp/                       React Native application
-│   ├── src/
-│   │   ├── screens/                   12 screens (Home, Enrol, Auth, PPE…)
-│   │   └── services/                  bioHash · encryption · geofencing · sync…
-│   ├── android/
-│   │   └── app/src/main/java/…/
-│   │       └── FaceProcessorModule.kt Kotlin: ML Kit + ONNX + anti-spoof
-│   ├── notebook/
-│   │   └── mobilefacenet_training.ipynb  full Kaggle training notebook
-│   ├── artifacts/
-│   │   ├── mobilefacenet_fp32.pt      PyTorch checkpoint
-│   │   ├── mobilefacenet_fp32.onnx    FP32 ONNX (4.0 MB)
-│   │   └── mobilefacenet_int8.onnx    INT8 ONNX (1.15 MB) ← used on device
-│   ├── __tests__/                     unit tests
-│   └── TECHNICAL_DOCUMENT.md         full technical reference
-└── presentation/
-    └── NHAI_FaceAuth_FINAL.pptx       hackathon pitch deck
+NHAI_hackathon/
+ README.md ← you are here
+ LICENSE (MIT)
+ docs/ GitHub Pages site
+ index.html full interactive demo page
+ nhai_logo.png
+ screenshots/ 9 app screenshots
+ MODEL.md model training deep-dive
+ FEATURES.md complete feature notes
+ ARCHITECTURE.md system design
+ SECURITY.md threat model
+ BUILD.md reproducible build guide
+ FaceAuthApp/ React Native application
+ src/
+ screens/ 12 screens (Home, Enrol, Auth, PPE…)
+ services/ bioHash · encryption · geofencing · sync…
+ android/
+ app/src/main/java/…/
+ FaceProcessorModule.kt Kotlin: ML Kit + ONNX + anti-spoof
+ notebook/
+ mobilefacenet_training.ipynb full Kaggle training notebook
+ artifacts/
+ mobilefacenet_fp32.pt PyTorch checkpoint
+ mobilefacenet_fp32.onnx FP32 ONNX (4.0 MB)
+ mobilefacenet_int8.onnx INT8 ONNX (1.15 MB) ← used on device
+ __tests__/ unit tests
+ TECHNICAL_DOCUMENT.md full technical reference
+ presentation/
+ NHAI_FaceAuth_FINAL.pptx hackathon pitch deck
 ```
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <div align="center">
 
@@ -362,7 +358,7 @@ nhai-face-auth/
 
 | Document | Description |
 |---|---|
-| [** Full Demo Page**](https://eartherai.github.io/FaceAuthApp/) | Interactive site: every feature, model details, architecture, comparison |
+| [** Full Demo Page**](https://dhr2206.github.io/NHAI_hackathon/) | Interactive site: every feature, model details, architecture, comparison |
 | [** MODEL.md**](docs/MODEL.md) | Training setup, architecture, results, reproduction, integration |
 | [** FEATURES.md**](docs/FEATURES.md) | Every feature, how it works, why it matters, criterion map |
 | [** ARCHITECTURE.md**](docs/ARCHITECTURE.md) | Pipeline, modules, data flow, performance budget |
