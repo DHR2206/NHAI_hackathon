@@ -22,7 +22,7 @@ National Highways Authority of India · Hackathon 7.0 · Datalake 3.0 Ready</p>
 
 <p>
  <a href="https://dhr2206.github.io/NHAI_hackathon/"><strong> Full Demo Page</strong></a> &nbsp;·&nbsp;
- <a href="https://github.com/DHR2206/NHAI_hackathon/tree/main/presentation"><strong> Presentation</strong></a> &nvsp·&nbsp;
+ <a href="https://github.com/DHR2206/NHAI_hackathon/tree/main/presentation"><strong> Presentation</strong></a> &nbsp·&nbsp;
  <a href="../../releases/latest"><strong> Download APK</strong></a> &nbsp;·&nbsp;
  <a href="FaceAuthApp/notebook/mobilefacenet_training.ipynb"><strong> Training Notebook</strong></a> &nbsp;·&nbsp;
  <a href="docs/MODEL.md"><strong> Model Details</strong></a> &nbsp;·&nbsp;
